@@ -1,0 +1,3 @@
+<ng-container *ngFor="let iframe of allIframes | async" >
+    <iframes-iframe [class.hidden]="!iframe.showing" [iframeSource]="iframe.src"></iframes-iframe>
+</ng-container>
