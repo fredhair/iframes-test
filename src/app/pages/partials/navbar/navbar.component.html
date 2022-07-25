@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <ng-container *ngFor="let link of links">
-            <li *ngIf="link.name"><a [routerLink]="link.href">{{ link.name }}</a></li>
+            <li *ngIf="link.name"><a [routerLink]="link.href" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ link.name }}</a></li>
         </ng-container>
     </ul>
 </nav>

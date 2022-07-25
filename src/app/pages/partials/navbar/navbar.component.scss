@@ -1,9 +1,9 @@
 @use 'sass:color';
 
 $nav-bg: hsl(320, 90%, 30%);
-$link-bg: hsl(290, 90%, 20%);
+$link-bg: color.adjust($nav-bg, $hue: -30deg, $lightness: -10%);
 $link-color: white;
-$link-accent: color.adjust($link-bg, $lightness: 80%);
+$link-accent: color.adjust($link-bg, $lightness: 60%);
 
 nav {
     background-color: $nav-bg;
